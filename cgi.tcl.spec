@@ -36,8 +36,8 @@ du¿± funkcjonalno¶æ - obs³uguje formularze, tabelki, ciasteczka,
 upload plików, wtyczki, JavaScript, rozszerzenia Netscape itp.
 Udostêpnia tak¿e bardzo wygodne wsparcie dla odpluskwiania i obs³ugi
 b³êdów CGI. cgi.tcl mo¿e byæ u¿ywane tak¿e do generowania statycznego
-HTML-a. Pozwala to na umieszczanie w HTML elementów programów w HTML,
-takich jak zmienne, if/then/else, operacje na plikach itp. Na
+HTML-a. Pozwala to na umieszczanie w HTML-u elementów programów w
+HTML-u, takich jak zmienne, if/then/else, operacje na plikach itp. Na
 przyk³ad, HTML nie ma zmiennych, wiêc je¶li u¿ywa siê tego samego
 odno¶nika wielokrotnie na stronie, i w pewnym momencie on siê zmienia,
 trzeba uaktualniæ ka¿de u¿ycie tego odno¶nika, byæ mo¿e na setkach
