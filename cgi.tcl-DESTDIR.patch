@@ -1,0 +1,65 @@
+--- ./Makefile.in.org	Thu Nov  2 19:41:19 2000
++++ ./Makefile.in	Tue Oct  8 14:06:38 2002
+@@ -52,23 +52,23 @@
+ # Do not change anything after this
+ ######################################################################
+ 
+-bindir_arch_indep = $(prefix)/bin
+-libdir 	= $(exec_prefix)/lib
+-datadir = $(prefix)/lib
+-
+-mandir 	= $(prefix)/man
+-man1dir = $(mandir)/man1
+-man3dir = $(mandir)/man3
+-docdir = $(datadir)/doc
++libdir	= @libdir@
++datadir	= @datadir@
++mandir	= @mandir@
++
++bindir_arch_indep	= $(prefix)/bin
++man1dir			= $(mandir)/man1
++man3dir			= $(mandir)/man3
++docdir			= $(datadir)/doc
+ 
+ # utility script directories - arch-independent and arch-non-
+ # independent.
+ SCRIPTDIR	= $(datadir)/cgi$(SHORT_VERSION)
+ EXECSCRIPTDIR	= $(execdatadir)/cgi$(SHORT_VERSION)
+ 
+-INSTALL = @INSTALL@
+-INSTALL_PROGRAM = @INSTALL_PROGRAM@
+-INSTALL_DATA = @INSTALL_DATA@
++INSTALL		= @INSTALL@
++INSTALL_PROGRAM	= @INSTALL_PROGRAM@
++INSTALL_DATA	= @INSTALL_DATA@
+ 
+ # To install the following examples: make examples
+ EXAMPLES=cookie.cgi creditcard.cgi \
+@@ -100,21 +100,21 @@
+ install-info:
+ 
+ install: all
+-	${srcdir}/mkinstalldirs $(man3dir) $(SCRIPTDIR) $(exampledir) $(exampledir)/data
++	${srcdir}/mkinstalldirs $(DESTDIR)$(man3dir) $(DESTDIR)$(SCRIPTDIR) $(DESTDIR)$(exampledir) $(DESTDIR)$(exampledir)/data
+ # install scripts
+-	$(INSTALL_DATA) cgi.tcl $(SCRIPTDIR)
++	$(INSTALL_DATA) cgi.tcl $(DESTDIR)$(SCRIPTDIR)
+ # install library man page
+-	$(INSTALL_DATA) cgi.tcl.man $(man3dir)/cgi.tcl.3
+-	$(INSTALL_DATA) pkgIndex.tcl $(SCRIPTDIR)
++	$(INSTALL_DATA) cgi.tcl.man $(DESTDIR)$(man3dir)/cgi.tcl.3
++	$(INSTALL_DATA) pkgIndex.tcl $(DESTDIR)$(SCRIPTDIR)
+ 
+ examples:
+ 	for i in $(EXAMPLES) ; do \
+ 	  $(CGI_TCL_EXECUTABLE) $(srcdir)/fixline1 $(SHORT_BINDIR) < $(srcdir)/example/$$i > $$i ; \
+-	  $(INSTALL_PROGRAM) $$i $(exampledir) ; \
++	  $(INSTALL_PROGRAM) $$i $(DESTDIR)$(exampledir) ; \
+ 	  rm -f $$i ; \
+ 	done
+ 	for i in $(EXAMPLES_DATA) ; do \
+-	  $(INSTALL) -m 666 $(srcdir)/example/$$i $(exampledir)/data ; \
++	  $(INSTALL) -m 666 $(srcdir)/example/$$i $(DESTDIR)$(exampledir)/data ; \
+ 	done
+ 
+ cgi.tcl: $(srcdir)/cgi.tcl.in
