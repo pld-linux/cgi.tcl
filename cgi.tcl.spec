@@ -31,7 +31,7 @@ a tiny example of the benefits cgi.tcl provides.
 
 %description -l pl
 cgi.tcl to biblioteka obs³ugi CGI dla programistów Tcl. Biblioteka ma
-du¿± funkcjonalno¶æ - obs³uguje formularze, tablelki, ciasteczka,
+du¿± funkcjonalno¶æ - obs³uguje formularze, tabelki, ciasteczka,
 upload plików, wtyczki, JavaScript, rozszerzenia Netscape itp.
 Udostêpnia tak¿e bardzo wygodne wsparcie dla odpluskwiania i obs³ugi
 b³êdów CGI. cgi.tcl mo¿e byæ u¿ywane tak¿e do generowania statycznego
