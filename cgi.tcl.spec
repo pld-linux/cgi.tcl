@@ -20,14 +20,29 @@ cgi.tcl is the CGI support library for Tcl programmers. The library is
 very thorough - it supports forms, tables, cookies, file upload,
 plug-ins, JavaScript, Netscape extensions, etc, etc. It also provides
 very convenient support for debugging and handling CGI errors. cgi.tcl
-can also be used for generating static html (such as this page). This
-enables you to get programming features into HTML, such as variables,
-if/then/else, file I/O, etc. For example, HTML lacks variables so if
-you repeatedly use a link on a page and one day the link changes,
-you've got to update every use of the link, possibly on hundreds of
-pages. By storing the link in a Tcl variable, you can just change the
-one place where the variable is defined. This makes maintenance much
-easier. This is just a tiny example of the benefits cgi.tcl provides.
+can also be used for generating static HTML. This enables you to get
+programming features into HTML, such as variables, if/then/else, file
+I/O, etc. For example, HTML lacks variables so if you repeatedly use a
+link on a page and one day the link changes, you've got to update
+every use of the link, possibly on hundreds of pages. By storing the
+link in a Tcl variable, you can just change the one place where the
+variable is defined. This makes maintenance much easier. This is just
+a tiny example of the benefits cgi.tcl provides.
+
+%description -l pl
+cgi.tcl to biblioteka obs³ugi CGI dla programistów Tcl. Biblioteka ma
+du¿± funkcjonalno¶æ - obs³uguje formularze, tablelki, ciasteczka,
+upload plików, wtyczki, JavaScript, rozszerzenia Netscape itp.
+Udostêpnia tak¿e bardzo wygodne wsparcie dla odpluskwiania i obs³ugi
+b³êdów CGI. cgi.tcl mo¿e byæ u¿ywane tak¿e do generowania statycznego
+HTML-a. Pozwala to na umieszczanie w HTML elementów programów w HTML,
+takich jak zmienne, if/then/else, operacje na plikach itp. Na
+przyk³ad, HTML nie ma zmiennych, wiêc je¶li u¿ywa siê tego samego
+odno¶nika wielokrotnie na stronie, i w pewnym momencie on siê zmienia,
+trzeba uaktualniæ ka¿de u¿ycie tego odno¶nika, byæ mo¿e na setkach
+stron. Dziêki zapisaniu odno¶nika w zmiennej Tcl, wystarczy zmieniæ
+tylko to miejsce, gdzie zmienna jest zdefiniowana. Znacznie u³atwia to
+utrzymywanie stron. Jest to tylko ma³y przyk³ad zalet cgi.tcl.
 
 %prep
 %setup  -q -n %{name}-%{_mainver}
