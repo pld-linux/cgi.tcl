@@ -1,8 +1,8 @@
 Summary:	Tool Command Language embeddable scripting language, with shared libraries
 Summary(pl):	Tool Command Language - jêzyk skryptowy z bibliotekami dynamicznymi
 Name:		cgi.tcl
-%define		_mainver	1.6
-Version:	1.6.1
+%define		_mainver	1.8
+Version:	1.8.0
 Release:	1
 License:	Public Domain
 Group:		Development/Languages/Tcl
