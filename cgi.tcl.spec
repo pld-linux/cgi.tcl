@@ -7,6 +7,7 @@ Release:	1
 License:	Public Domain
 Group:		Development/Languages/Tcl
 Source0:	http://expect.nist.gov/%{name}/%{name}.tar.gz
+# Source0-md5:	51aa4cbcd401d760a7c5621c28b78125
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://expect.nist.gov/cgi.tcl/
 BuildRequires:	autoconf
