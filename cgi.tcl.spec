@@ -11,6 +11,7 @@ Source0:	http://expect.nist.gov/%{name}/%{name}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://expect.nist.gov/cgi.tcl/
 BuildRequires:	autoconf
+BuildRequires:	tcl
 Requires:	tcl
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
