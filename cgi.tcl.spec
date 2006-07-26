@@ -1,12 +1,12 @@
+%define		_mainver	1.8
 Summary:	Tool Command Language embeddable scripting language, with shared libraries
 Summary(pl):	Tool Command Language - jêzyk skryptowy z bibliotekami dynamicznymi
 Name:		cgi.tcl
-%define		_mainver	1.8
 Version:	1.8.0
 Release:	1
 License:	Public Domain
 Group:		Development/Languages/Tcl
-Source0:	http://expect.nist.gov/%{name}/%{name}.tar.gz
+Source0:	http://expect.nist.gov/%{name}/cgi.tcl.tar.gz
 # Source0-md5:	51aa4cbcd401d760a7c5621c28b78125
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://expect.nist.gov/cgi.tcl/
@@ -69,5 +69,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc HISTORY README doc/*.txt example
-%attr(644,root,root) %{_packagedir}/*.tcl
+%{_packagedir}/*.tcl
 %{_mandir}/man3/*
