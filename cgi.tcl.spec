@@ -1,6 +1,6 @@
 %define		_mainver	1.8
 Summary:	Tool Command Language embeddable scripting language, with shared libraries
-Summary(pl):	Tool Command Language - jêzyk skryptowy z bibliotekami dynamicznymi
+Summary(pl.UTF-8):   Tool Command Language - jÄ™zyk skryptowy z bibliotekami dynamicznymi
 Name:		cgi.tcl
 Version:	1.8.0
 Release:	1
@@ -31,20 +31,20 @@ link in a Tcl variable, you can just change the one place where the
 variable is defined. This makes maintenance much easier. This is just
 a tiny example of the benefits cgi.tcl provides.
 
-%description -l pl
-cgi.tcl to biblioteka obs³ugi CGI dla programistów Tcl. Biblioteka ma
-du¿± funkcjonalno¶æ - obs³uguje formularze, tabelki, ciasteczka,
-upload plików, wtyczki, JavaScript, rozszerzenia Netscape itp.
-Udostêpnia tak¿e bardzo wygodne wsparcie dla odpluskwiania i obs³ugi
-b³êdów CGI. cgi.tcl mo¿e byæ u¿ywane tak¿e do generowania statycznego
-HTML-a. Pozwala to na umieszczanie w HTML-u elementów programów w
+%description -l pl.UTF-8
+cgi.tcl to biblioteka obsÅ‚ugi CGI dla programistÃ³w Tcl. Biblioteka ma
+duÅ¼Ä… funkcjonalnoÅ›Ä‡ - obsÅ‚uguje formularze, tabelki, ciasteczka,
+upload plikÃ³w, wtyczki, JavaScript, rozszerzenia Netscape itp.
+UdostÄ™pnia takÅ¼e bardzo wygodne wsparcie dla odpluskwiania i obsÅ‚ugi
+bÅ‚Ä™dÃ³w CGI. cgi.tcl moÅ¼e byÄ‡ uÅ¼ywane takÅ¼e do generowania statycznego
+HTML-a. Pozwala to na umieszczanie w HTML-u elementÃ³w programÃ³w w
 HTML-u, takich jak zmienne, if/then/else, operacje na plikach itp. Na
-przyk³ad, HTML nie ma zmiennych, wiêc je¶li u¿ywa siê tego samego
-odno¶nika wielokrotnie na stronie, i w pewnym momencie on siê zmienia,
-trzeba uaktualniæ ka¿de u¿ycie tego odno¶nika, byæ mo¿e na setkach
-stron. Dziêki zapisaniu odno¶nika w zmiennej Tcl, wystarczy zmieniæ
-tylko to miejsce, gdzie zmienna jest zdefiniowana. Znacznie u³atwia to
-utrzymywanie stron. Jest to tylko ma³y przyk³ad zalet cgi.tcl.
+przykÅ‚ad, HTML nie ma zmiennych, wiÄ™c jeÅ›li uÅ¼ywa siÄ™ tego samego
+odnoÅ›nika wielokrotnie na stronie, i w pewnym momencie on siÄ™ zmienia,
+trzeba uaktualniÄ‡ kaÅ¼de uÅ¼ycie tego odnoÅ›nika, byÄ‡ moÅ¼e na setkach
+stron. DziÄ™ki zapisaniu odnoÅ›nika w zmiennej Tcl, wystarczy zmieniÄ‡
+tylko to miejsce, gdzie zmienna jest zdefiniowana. Znacznie uÅ‚atwia to
+utrzymywanie stron. Jest to tylko maÅ‚y przykÅ‚ad zalet cgi.tcl.
 
 %prep
 %setup  -q -n %{name}-%{_mainver}
