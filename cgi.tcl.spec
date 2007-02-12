@@ -1,6 +1,6 @@
 %define		_mainver	1.8
 Summary:	Tool Command Language embeddable scripting language, with shared libraries
-Summary(pl.UTF-8):   Tool Command Language - język skryptowy z bibliotekami dynamicznymi
+Summary(pl.UTF-8):	Tool Command Language - język skryptowy z bibliotekami dynamicznymi
 Name:		cgi.tcl
 Version:	1.8.0
 Release:	1
